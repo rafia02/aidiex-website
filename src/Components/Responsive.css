@@ -135,6 +135,15 @@
     margin: 0;
   
   }
+
+  .search li {
+    text-align: center;
+    padding: 5px;
+    flex: 1;
+    font-size: 14.5px;
+
+  }
+
   .img-main-container {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 50px;

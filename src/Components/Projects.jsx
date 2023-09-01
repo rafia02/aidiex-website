@@ -45,17 +45,17 @@ const datas = [
     {
         img: "https://tidytheme.com/tidytheme/aidiex/html/images/work_4.jpg",
         title: "Accessories Items",
-        catagory: "Apps"
+        catagory: "Others"
     },
     {
         img: "https://tidytheme.com/tidytheme/aidiex/html/images/work_5.jpg",
         title: "Accessories Items",
-        catagory: "Apps"
+        catagory: "Others"
     },
     {
         img: "https://tidytheme.com/blackgallery/elizah/html/images/work_7.jpg",
         title: "Accessories Items",
-        catagory: "Apps"
+        catagory: "Others"
     },
     {
         img: "https://tidytheme.com/tidytheme/aidiex/html/images/work_3.jpg",
@@ -89,7 +89,6 @@ const searchData = [
     "All",
     "Graphics",
     "Design",
-    "Apps",
     "Content",
     "Others",
 ]
@@ -103,7 +102,7 @@ export const Projects = () => {
     const handleSearch = (id = "All") => {
         if (id === "All") {
             setShow(false)
-            const newfilterData = datas.filter(f => f.catagory == "Design" || "Apps" || "Graphics" ||  "Content" || "Others")
+            const newfilterData = datas.filter(f => f.catagory == "Design" || "Graphics" ||  "Content" || "Others")
 
             setFilterData(newfilterData)
             
@@ -112,7 +111,6 @@ export const Projects = () => {
             console.log(id)
             setShow(false)
             const newfilterData = datas.filter(f => f.catagory === id)
-
             setFilterData(newfilterData)
             
         }
