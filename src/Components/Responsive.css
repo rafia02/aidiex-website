@@ -1,0 +1,123 @@
+@media only screen and (max-width: 767px) {
+    .container {
+      padding-bottom: 50px;
+    }
+  
+    .nav-container {
+      padding: 20px 20px;
+    }
+
+    .nav-rapper{
+        position: absolute;
+        top: 60px;
+        background-color: #ffff;
+        width: 50%;
+        right: 25px;
+        border-radius: 5px;
+        
+    }
+
+    .list-Li-style{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 5px;
+        
+    }
+  
+    .nav-manue-icon {
+      display: block;
+    }
+  
+
+
+    /*bannar kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+  
+    .bannar-container {
+      text-align: center;
+      width: 90%;
+      padding: 25px 20px 0;
+      margin: auto;
+    } 
+    .bannar-container h4 {
+      font-size: 17px;
+      letter-spacing: 3px;
+      font-weight: 600;
+      color: #B89841;
+      line-height: .8;
+    }
+    .bannar-container h1 {
+      font-size: 23px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    h6 {
+      font-size: 14.5px;
+      text-align: center;
+      overflow: hidden;
+      padding: 0 10px;
+      padding-right: 0;
+    }
+
+    
+  /* banner end ########################  */
+
+
+
+  .who-container h1{
+    font-size: 25px;
+  }
+  .who-container {
+    padding: 20px;
+  }
+
+  /* who section end ################# */
+
+ /* wxtra section start ################# */
+ .extra-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 20px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  .fetures-container {
+    gap: 20px;
+    align-items: center;
+
+  }
+
+  .fetures-container h3 {
+    text-align: start;
+  }
+
+  /* service start ##########  */
+  .service-main {
+    padding: 40px 20px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .service-container p {
+    width: 100%;
+  }
+  .details-container {
+    grid-template-columns: repeat(1, 1fr);
+
+  
+  }
+
+
+
+
+  }
+
+
+
+
+  
+  
+  

@@ -1,36 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 const datas = [
     {
-        img: "https://tidytheme.com/blackgallery/elizah/html/images/work_1.jpg",
-        title: "Accessories Items",
-        catagory: "Graphic"
-    },
-    {
         img: "https://tidytheme.com/blackgallery/elizah/html/images/work_3.jpg",
         title: "Accessories Items",
-        catagory: "Graphic"
-    },
-    {
-        img: "https://tidytheme.com/blackgallery/elizah/html/images/work_4.jpg",
-        title: "Accessories Items",
-        catagory: "Graphic"
+        catagory: "Graphics"
     },
     {
         img: "https://tidytheme.com/blackgallery/elizah/html/images/work_5.jpg",
         title: "Accessories Items",
-        catagory: "Graphic"
+        catagory: "Graphics"
+    },
+    {
+        img: "https://tidytheme.com/blackgallery/elizah/html/images/work_1.jpg",
+        title: "Accessories Items",
+        catagory: "Graphics"
     },
     {
         img: "https://tidytheme.com/blackgallery/elizah/html/images/work_6.jpg",
         title: "Accessories Items",
-        catagory: "Graphic"
+        catagory: "Graphics"
     },
     {
         img: "https://tidytheme.com/tidytheme/aidiex/html/images/work_6.jpg",
         title: "Accessories Items",
-        catagory: "Graphic"
+        catagory: "Design"
     },
     {
         img: "https://tidytheme.com/tidytheme/aidiex/html/images/work_3.jpg",
@@ -41,6 +36,11 @@ const datas = [
         img: "https://tidytheme.com/tidytheme/aidiex/html/images/work_1.jpg",
         title: "Accessories Items",
         catagory: "Design"
+    },
+    {
+        img: "https://tidytheme.com/blackgallery/elizah/html/images/work_4.jpg",
+        title: "Accessories Items",
+        catagory: "Graphics"
     },
     {
         img: "https://tidytheme.com/tidytheme/aidiex/html/images/work_4.jpg",
@@ -85,8 +85,38 @@ const datas = [
 ]
 
 
+const searchData = [
+    "All Work",
+    "Graphics",
+    "Design",
+    "Apps",
+    "Content",
+    "Others",
+]
+
+
 
 export const Projects = () => {
+    const [filterData, setFilterData] = useState([])
+    const [show, setShow] = useState(true)
+
+    const handleSearch = (id = "All Work") => {
+        if (id === "All Work") {
+            setShow(false)
+            const newfilterData = datas.filter(f => f.catagory == "Design" || "Apps" || "Graphics" ||  "Content" || "Others")
+
+            setFilterData(newfilterData)
+            
+        }
+        else {
+            console.log(id)
+            setShow(false)
+            const newfilterData = datas.filter(f => f.catagory === id)
+
+            setFilterData(newfilterData)
+            
+        }
+    }
 
     return (
         <div className='project-main-container'>
@@ -97,16 +127,16 @@ export const Projects = () => {
             </div>
 
             <ul className='search'>
-                <li>All Work</li>
-                <li> Graphic </li>
-                <li>Design </li>
-                <li>Design </li>
-                <li>Content</li>
-                <li> Others</li>
+                {
+                    searchData.map(s => <li onClick={() => handleSearch(s)}>{s}</li>)
+                }
+
             </ul>
 
             <div className='img-main-container'>
                 {
+
+                    show? 
                     datas.map(d => <div
 
                         className='img-container '
@@ -119,6 +149,20 @@ export const Projects = () => {
                             </div>
                         </div>
                     </div>)
+                    :
+                    filterData.map(d => <div
+
+                        className='img-container '
+                        style={{ backgroundImage: `url(${d.img})` }}
+                    >
+                        <div className="shutter-overlay">
+                            <div className='shutter-overlay-title'>
+                                <h3>{d.title}</h3>
+                                <h5>{d.catagory}</h5>
+                            </div>
+                        </div>
+                    </div>)
+
                 }
 
             </div>

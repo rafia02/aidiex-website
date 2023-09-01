@@ -4,20 +4,50 @@
 
 }
 
+p {
+  text-align: justify;
+  font-size: 14.9px;
+  font-weight: 300;
+  color: rgba(39, 39, 39, 0.7);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
 .home-container {
   margin: 0;
   padding: 0;
-
+  width: 100%;
 }
+
+h6 {
+  font-size: 14.5px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: rgba(39, 39, 39, 0.7);
+  padding-right: 78px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+
+
+/* global css end ######################################## */
 
 .container {
   background-image: url("https://tidytheme.com/tidytheme/aidiex/html/images/slider6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
   width: 100%;
-  margin: 0;
+  padding-bottom: 100px;
 }
+
+
+/* navber  ###################################### */
 
 .nav-container {
   display: flex;
@@ -28,19 +58,26 @@
 
 }
 
-.manu-items {
-  display: flex;
-  list-style: none;
-  padding: 0;
+
+.nav-rapper-hide{
+ position: absolute;
+ top: -300px;
 }
 
-.manu-items li {
-  flex: 1;
+
+
+.list-Li-style {
   padding: 10px 18px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
 
+}
+
+.nav-manue-icon {
+  font-size: 27px;
+  font-weight: bolder;
+  display: none;
 }
 
 
@@ -63,15 +100,7 @@
   letter-spacing: 2px;
 }
 
-h6 {
-  font-size: 14.5px;
-  letter-spacing: 1px;
-  font-weight: 300;
-  color: rgba(39, 39, 39, 0.7);
-  padding-right: 78px;
-  margin-bottom: 30px;
-  line-height: 1.7;
-}
+
 
 .button-style {
   background-color: #B89841;
@@ -90,6 +119,7 @@ h6 {
   display: flex;
   padding: 40px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .who-container h6 {
@@ -102,8 +132,9 @@ h6 {
 .extra-container {
   display: grid;
   gap: 50px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   padding: 0 60px;
+  margin-bottom: 70px;
 }
 
 .learn-more-container img {
@@ -112,21 +143,15 @@ h6 {
   margin-bottom: 20px;
 }
 
-p {
+
+/* .learn-more-container p {
   text-align: justify;
   font-size: 14.9px;
   font-weight: 300;
   color: rgba(39, 39, 39, 0.7);
   margin-bottom: 30px;
   line-height: 1.6;
-
-}
-
-h3 {
-  font-size: 22px;
-  line-height: 26px;
-}
-
+} */
 
 .fetures-container {
   display: flex;
@@ -183,8 +208,6 @@ hr {
   display: grid;
   gap: 28px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1;
-  overflow: hidden;
 
 }
 
@@ -235,6 +258,10 @@ hr {
 
 }
 
+.search:hover {
+  cursor: pointer;
+}
+
 .search li {
   text-align: center;
   padding: 12px;
@@ -267,20 +294,6 @@ hr {
 }
 
 
-
-/* .shutter-image-container {
-  position: relative;
-  overflow: hidden;
-} */
-
-/* .img-container {
-  width: 320px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  transition: transform 0.3s ease;
-} */
 
 .shutter-overlay {
   position: absolute;
@@ -402,7 +415,19 @@ hr {
   padding: 40px 0;
   padding-bottom: 60px;
   border-radius: 3px;
-  /* border: 2px solid black; */
+
+}
+
+
+.plan-container:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.plan-container h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1px;
 }
 
 .plan-description {
@@ -411,9 +436,14 @@ hr {
 
 .plan-main {
   display: grid;
-  gap: 30px;
+  gap: 35px;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 20px;
+  margin-top: 70px;
+}
+
+.plan {
+  background-color: #f2f8fd;
+  padding-bottom: 100px;
 }
 
 
@@ -476,7 +506,7 @@ hr {
   padding: 7px;
 }
 
-.form-box{
+.form-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -484,13 +514,13 @@ hr {
 
 }
 
-.inpt-container{
+.inpt-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.inpt-container input{
+.inpt-container input {
   padding: 10px;
   outline: inherit;
   border-color: #acabab;
@@ -498,21 +528,21 @@ hr {
   border-style: none none solid;
 }
 
-.form-box textarea{
+.form-box textarea {
   padding: 10px;
   outline: none;
   border-color: #acabab;
-  border-width:  1px;
+  border-width: 1px;
   border-style: solid;
   height: 155px;
 }
 
-.carousel{
+.carousel {
   margin-top: 50px;
-  padding: 40px ;
+  padding: 40px;
 }
 
-.carousel h1{
+.carousel h1 {
   text-align: center;
   font-family: 'Pacifico';
   letter-spacing: 2px;
@@ -525,37 +555,37 @@ hr {
   text-align: center;
   font-size: 2rem;
   margin-top: 70px;
-  
+
 }
 
-.count-rapper{
+.count-rapper {
   background-color: #272626;
   color: #ffff;
   padding: 60px 160px;
 }
 
-.count-title p{
+.count-title p {
   width: 50%;
   margin: auto;
   color: #ffff;
   text-align: center;
-  
+
 }
 
-.count-main-container{
+.count-main-container {
   display: flex;
   justify-content: space-between;
 }
 
-.count-up-section h5{
+.count-up-section h5 {
   margin: 0;
   font-size: 25px;
   margin-top: 5px;
   letter-spacing: 1px;
- 
+
 }
 
-.number{
+.number {
   color: #c09c3a;
 }
 
@@ -566,7 +596,7 @@ hr {
 .footer {
   background-color: black;
   color: #fff;
-  padding: 50px 20px ;
+  padding: 50px 20px;
 }
 
 .footer-content {
@@ -580,7 +610,7 @@ hr {
   padding: 0 20px;
 }
 
-.menu-section img{
+.menu-section img {
   margin-top: 18px;
 }
 
@@ -606,7 +636,7 @@ hr {
   letter-spacing: 1px;
 }
 
-.social-icon{
+.social-icon {
   font-size: 17px;
   padding: 8px;
   border: 1px solid #a8a8a8;
@@ -616,74 +646,7 @@ hr {
   transition: background-color .4s ease;
 }
 
-.social-icon:hover{
+.social-icon:hover {
   background-color: #c09c3a;
   color: #ffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
