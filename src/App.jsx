@@ -27,14 +27,14 @@ function App() {
       <Extra></Extra>
       <Services></Services>
       <Count></Count>
-      {/* <Projects></Projects>
+      <Projects></Projects>
       <div className='hole-rapper'>
         <Team></Team>
         <Plan></Plan>
       </div>
       <Brand></Brand>
       <Contact></Contact>
-      <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   )
 }

@@ -12,17 +12,17 @@ export const Count = () => {
 
       <div className='count-main-container'>
         <div className="count-up-section">
-          <CountUp className='number' start={125} end={275} duration={15} delay={0} separator="," />
+          <CountUp className='number' start={125} end={275} duration={20} delay={0} separator="," />
           <h5> Project </h5>
         </div>
 
         <div className="count-up-section">
-          <CountUp className='number' start={150} end={482} duration={15} delay={0} separator="," />
+          <CountUp className='number' start={150} end={482} duration={20} delay={0} separator="," />
           <h5>Client Review</h5>
         </div>
 
         <div className="count-up-section">
-          <CountUp className='number' start={400} end={865} duration={15} delay={0} separator="," />
+          <CountUp className='number' start={400} end={865} duration={20} delay={0} separator="," />
           <h5>Working Hour</h5>
         </div>
       </div>

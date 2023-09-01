@@ -71,7 +71,15 @@ h6 {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
+  text-decoration: none;
+  color: black;
+}
 
+.list-Li-style:hover{
+  color: #B89841;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .5s;
 }
 
 .nav-manue-icon {
@@ -251,6 +259,7 @@ hr {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   padding: 0;
   background: #ffff;
@@ -269,7 +278,11 @@ hr {
   font-size: 14.5px;
   font-weight: 600;
   letter-spacing: 1px;
+}
 
+.search li:hover{
+  color: #B89841;
+  transition: .4s;
 }
 
 .img-main-container {
@@ -379,6 +392,7 @@ hr {
   padding: 100px 40px;
 }
 
+
 .plan-rapper {
   background-image: url("https://tidytheme.com/tidytheme/aidiex/html/images/pricing.jpg");
   padding: 60px 40px;
@@ -472,16 +486,19 @@ hr {
 }
 
 .contact-main-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
 }
 
 .contact-container {
   display: flex;
   gap: 20px;
-  justify-content: center;
   align-items: center;
+  border: 1px solid #B89841;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .contact-container h5 {
@@ -511,7 +528,6 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 90px;
-
 }
 
 .inpt-container {
@@ -523,7 +539,7 @@ hr {
 .inpt-container input {
   padding: 10px;
   outline: inherit;
-  border-color: #acabab;
+  border-color: #B89841;
   border-width: medium medium 1px;
   border-style: none none solid;
 }
@@ -531,7 +547,7 @@ hr {
 .form-box textarea {
   padding: 10px;
   outline: none;
-  border-color: #acabab;
+  border-color: #B89841;
   border-width: 1px;
   border-style: solid;
   height: 155px;
@@ -569,7 +585,6 @@ hr {
   margin: auto;
   color: #ffff;
   text-align: center;
-
 }
 
 .count-main-container {
@@ -582,15 +597,11 @@ hr {
   font-size: 25px;
   margin-top: 5px;
   letter-spacing: 1px;
-
 }
 
 .number {
   color: #c09c3a;
 }
-
-
-
 
 
 .footer {

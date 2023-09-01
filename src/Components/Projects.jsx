@@ -86,7 +86,7 @@ const datas = [
 
 
 const searchData = [
-    "All Work",
+    "All",
     "Graphics",
     "Design",
     "Apps",
@@ -100,8 +100,8 @@ export const Projects = () => {
     const [filterData, setFilterData] = useState([])
     const [show, setShow] = useState(true)
 
-    const handleSearch = (id = "All Work") => {
-        if (id === "All Work") {
+    const handleSearch = (id = "All") => {
+        if (id === "All") {
             setShow(false)
             const newfilterData = datas.filter(f => f.catagory == "Design" || "Apps" || "Graphics" ||  "Content" || "Others")
 

@@ -11,19 +11,7 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-      <div className="menu-section">
-          <img src="https://tidytheme.com/tidytheme/aidiex/html/images/lfooter_ogo.png" alt="" />
-          <ul>
-            <li><a href="#">Aidiex  is Corporate website design and buld website</a></li>
-            <li><a  href="#">
-                <FaFacebookF className='social-icon'></FaFacebookF>
-                <RiPinterestLine className='social-icon'></RiPinterestLine>
-                <BsTwitter className='social-icon'></BsTwitter>
-                <FaLinkedinIn  className='social-icon'></FaLinkedinIn>
-                </a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </div>
+
         <div className="menu-section">
           <h3>About Us</h3>
           <ul>
@@ -48,6 +36,22 @@ export const Footer = () => {
             <li><a href="#">Address : California, USA</a></li>
           </ul>
         </div>
+
+
+        <div className="menu-section">
+          <img src="https://tidytheme.com/tidytheme/aidiex/html/images/lfooter_ogo.png" alt="" />
+          <ul>
+            <li><a href="#">Aidiex  is Corporate website design and buld website</a></li>
+            <li><a href="#">
+              <FaFacebookF className='social-icon'></FaFacebookF>
+              <RiPinterestLine className='social-icon'></RiPinterestLine>
+              <BsTwitter className='social-icon'></BsTwitter>
+              <FaLinkedinIn className='social-icon'></FaLinkedinIn>
+            </a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+
       </div>
     </footer>
   )
